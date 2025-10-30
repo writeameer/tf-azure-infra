@@ -20,10 +20,10 @@
 
 | Region | Account | Model Count | Status |
 |--------|---------|-------------|--------|
-| eastus | ainprod5212288488 | 157 | ✅ Available |
-| eastus2 | hatta-m4qxz9tr-eastus2 | 160 | ✅ Available (most) |
-| uaenorth | ai-uaenorth-test | 135 | ✅ Available |
-| southeastasia | ai-southeastasia-test | 17 | ✅ Available (limited) |
+| eastus | xxx | 157 | ✅ Available |
+| eastus2 | xxx | 160 | ✅ Available (most) |
+| uaenorth | xxx| 135 | ✅ Available |
+| southeastasia | xxx | 17 | ✅ Available (limited) |
 | **eastasia** | **N/A** | **N/A** | ❌ Not supported |
 | **singapore** | **N/A** | **N/A** | ❌ No dedicated region |
 
@@ -40,21 +40,3 @@
 - **East Asia**: `southeastasia` is the closest region to East Asia; `eastasia` doesn't support AIServices.
 - **Most models**: eastus2 has 160 models available.
 - **Limited models**: southeastasia has only 17 models (OpenAI family only).
-
-## Reference
-
-Query available models from supported regions:
-
-```bash
-# eastus (157 models)
-terraform apply -auto-approve -var-file=terraform.eastus.tfvars
-
-# eastus2 (160 models - most available)
-terraform apply -auto-approve -var-file=terraform.eastus2.tfvars
-
-# uaenorth (135 models)
-terraform apply -auto-approve -var-file=terraform.uaenorth.tfvars
-
-# southeastasia (17 models - Singapore/SE Asia region)
-terraform apply -auto-approve -var-file=terraform.southeastasia.tfvars
-```
